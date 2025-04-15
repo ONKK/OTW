@@ -28,9 +28,10 @@ host-suffix, 830830.xyz, direct
 
 
 # 🔺 代理
-host-suffix, docker.com, proxy
 host-suffix, 18wos.org, proxy
 host-keyword, github, proxy
+host-keyword, docker, proxy
+IP-CIDR,95.161.76.0/20, proxy
 
 # 🔺 屏蔽
 host-keyword, hpplay, reject
@@ -38,4 +39,4 @@ host, appsflyersdk.com, reject
 host, app-analytics-services.com, reject
 
 # 🔺 Telegram 防止加载转圈
-ip-cidr, 95.161.76.100/31, reject
+#ip-cidr, 95.161.76.100/31, reject
