@@ -1,42 +1,47 @@
-# NAME: myfilter
-# AUTHOR: vvili
-# UPDATED: 20250311
-# 自定义规则
+#!name=CustomRule
+#!desc=自定义规则
+#!author=vvili
+#!homepage=
+#!icon=
+#!raw-url=https://raw.githubusercontent.com/ONKK/OTW/main/Loon/rule/CustomRule.list
+#!tg-group=
+#!update=2025-04-21
+#############################################
 
 # 🔺 直连
 # > 一些比较容易忽视的分流
-host, ad.12306.cn, direct
-host, sdkapp.uve.weibo.com, direct
-host-suffix, speedtest.net, direct
-host-suffix, synology.com, direct
-host-keyword, bwh8, direct
+DOMAIN,ad.12306.cn,DIRECT
+DOMAIN,sdkapp.uve.weibo.com,DIRECT
+DOMAIN-SUFFIX,speedtest.net,DIRECT
+DOMAIN-SUFFIX,synology.com,DIRECT
+DOMAIN-KEYWORD,bwh8,DIRECT
 
 # > domains
-host-suffix, 22so.com, direct
-host-suffix, onkk.com, direct
-host-suffix, sbyby.com, direct
-host-suffix, vvici.com, direct
-host-suffix, vvili.com, direct
-host-suffix, incc.cc, direct
-host-suffix, onkk.cc, direct
-host-suffix, vvici.cc, direct
-host-suffix, yahe.cc, direct
-host-suffix, vvili.bid, direct
-host-suffix, vvici.bid, direct
-host-suffix, 630630.xyz, direct
-host-suffix, 830830.xyz, direct
+DOMAIN-SUFFIX,22so.com,DIRECT
+DOMAIN-SUFFIX,onkk.com,DIRECT
+DOMAIN-SUFFIX,sbyby.com,DIRECT
+DOMAIN-SUFFIX,vvici.com,DIRECT
+DOMAIN-SUFFIX,vvili.com,DIRECT
+DOMAIN-SUFFIX,incc.cc,DIRECT
+DOMAIN-SUFFIX,onkk.cc,DIRECT
+DOMAIN-SUFFIX,vvici.cc,DIRECT
+DOMAIN-SUFFIX,yahe.cc,DIRECT
+DOMAIN-SUFFIX,vvili.bid,DIRECT
+DOMAIN-SUFFIX,vvici.bid,DIRECT
+DOMAIN-SUFFIX,630630.xyz,DIRECT
+DOMAIN-SUFFIX,830830.xyz,DIRECT
 
 
 # 🔺 代理
-host-suffix, 18wos.org, proxy
-host-keyword, github, proxy
-host-keyword, docker, proxy
-IP-CIDR,95.161.76.0/20, proxy
+DOMAIN-SUFFIX,18wos.org,PROXY
+DOMAIN-KEYWORD,github,PROXY
+DOMAIN-KEYWORD,docker,PROXY
+IP-CIDR,95.161.76.0/20,PROXY
 
 # 🔺 屏蔽
-host-keyword, hpplay, reject
-host, appsflyersdk.com, reject
-host, app-analytics-services.com, reject
+DOMAIN-KEYWORD,hpplay,REJECT
+DOMAIN,appsflyersdk.com,REJECT
+DOMAIN,app-analytics-services.com,REJECT
 
 # 🔺 Telegram 防止加载转圈
-#ip-cidr, 95.161.76.100/31, reject
+#IP-CIDR,95.161.76.100/31,REJECT
