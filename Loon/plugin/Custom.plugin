@@ -16,8 +16,6 @@
 
 # 🔺 直连
 # > 一些比较容易忽视的分流
-DOMAIN,ad.12306.cn,DIRECT
-DOMAIN,sdkapp.uve.weibo.com,DIRECT
 DOMAIN-SUFFIX,speedtest.net,DIRECT
 DOMAIN-SUFFIX,synology.com,DIRECT
 DOMAIN-KEYWORD,bwh8,DIRECT
@@ -42,15 +40,21 @@ DOMAIN-SUFFIX,830830.xyz,DIRECT
 DOMAIN-SUFFIX,18wos.org,PROXY
 DOMAIN-KEYWORD,github,PROXY
 DOMAIN-KEYWORD,docker,PROXY
-IP-CIDR,95.161.76.0/20,PROXY
+
 
 # 🔺 屏蔽
 DOMAIN-KEYWORD,hpplay,REJECT
 DOMAIN,appsflyersdk.com,REJECT
 DOMAIN,app-analytics-services.com,REJECT
 
-# 🔺 Telegram 防止加载转圈
-#IP-CIDR,95.161.76.100/31,REJECT
+# > Telegram 防止加载转圈
+IP-CIDR,95.161.76.100/31,REJECT-NO-DROP,no-resolve
+
+# > 防止B站上传
+AND,((PROTOCOL, STUN), (DOMAIN-KEYWORD, bilibili.)),REJECT
+
+# > 防止信息收集
+URL-REGEX,"\.log\.",REJECT
 
 [Rewrite]
 
