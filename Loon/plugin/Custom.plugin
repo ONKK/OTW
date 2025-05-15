@@ -1,0 +1,62 @@
+#!name = 自定义模块
+#!desc = Rule,Rewrite,MitM,Argument
+#!openUrl = 
+#!author = ONKK[https://github.com/ONKK]
+#!tag = 
+#!system = 
+#!system_version = 
+#!loon_version = 3.2.4(787)
+#!homepage = https://github.com/ONKK/OTW
+#!icon = https://onkk.cc/web/img/logo.png
+#!raw-url=https://github.com//ONKK/OTW/raw/main/Loon/plugin/Custom.plugin
+#!tg-group=https://t.me/onkkgroup
+#!date = 2025-05-15 00:00:00
+
+[Rule]
+
+# 🔺 直连
+# > 一些比较容易忽视的分流
+DOMAIN,ad.12306.cn,DIRECT
+DOMAIN,sdkapp.uve.weibo.com,DIRECT
+DOMAIN-SUFFIX,speedtest.net,DIRECT
+DOMAIN-SUFFIX,synology.com,DIRECT
+DOMAIN-KEYWORD,bwh8,DIRECT
+
+# > domains
+DOMAIN-SUFFIX,22so.com,DIRECT
+DOMAIN-SUFFIX,onkk.com,DIRECT
+DOMAIN-SUFFIX,sbyby.com,DIRECT
+DOMAIN-SUFFIX,vvici.com,DIRECT
+DOMAIN-SUFFIX,vvili.com,DIRECT
+DOMAIN-SUFFIX,incc.cc,DIRECT
+DOMAIN-SUFFIX,onkk.cc,DIRECT
+DOMAIN-SUFFIX,vvici.cc,DIRECT
+DOMAIN-SUFFIX,yahe.cc,DIRECT
+DOMAIN-SUFFIX,vvili.bid,DIRECT
+DOMAIN-SUFFIX,vvici.bid,DIRECT
+DOMAIN-SUFFIX,630630.xyz,DIRECT
+DOMAIN-SUFFIX,830830.xyz,DIRECT
+
+
+# 🔺 代理
+DOMAIN-SUFFIX,18wos.org,PROXY
+DOMAIN-KEYWORD,github,PROXY
+DOMAIN-KEYWORD,docker,PROXY
+IP-CIDR,95.161.76.0/20,PROXY
+
+# 🔺 屏蔽
+DOMAIN-KEYWORD,hpplay,REJECT
+DOMAIN,appsflyersdk.com,REJECT
+DOMAIN,app-analytics-services.com,REJECT
+
+# 🔺 Telegram 防止加载转圈
+#IP-CIDR,95.161.76.100/31,REJECT
+
+[Rewrite]
+
+
+[Script]
+
+
+[MitM]
+hostname = 
