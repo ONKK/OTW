@@ -10,7 +10,7 @@
 #!icon = https://onkk.cc/web/img/logo.png
 #!raw-url = https://raw.githubusercontent.com/ONKK/OTW/main/Loon/plugin/Custom.plugin
 #!tg-group = https://t.me/onkkgroup
-#!date = 2025-05-15 00:00:00
+#!date = 2025-09-05 00:00:00
 
 [Rule]
 
@@ -46,6 +46,7 @@ DOMAIN-KEYWORD,docker,PROXY
 DOMAIN-KEYWORD,hpplay,REJECT
 DOMAIN,appsflyersdk.com,REJECT
 DOMAIN,app-analytics-services.com,REJECT
+DOMAIN,msmp.abchina.com.cn,REJECT
 
 # > Telegram 防止加载转圈
 IP-CIDR,95.161.76.100/31,REJECT-NO-DROP,no-resolve
