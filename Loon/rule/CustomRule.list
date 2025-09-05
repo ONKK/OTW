@@ -5,7 +5,7 @@
 #!icon=
 #!raw-url=https://raw.githubusercontent.com/ONKK/OTW/main/Loon/rule/CustomRule.list
 #!tg-group=
-#!update=2025-04-21
+#!update=2025-09-05
 #############################################
 
 # 🔺 直连
@@ -42,6 +42,7 @@ IP-CIDR,95.161.76.0/20,PROXY
 DOMAIN-KEYWORD,hpplay,REJECT
 DOMAIN,appsflyersdk.com,REJECT
 DOMAIN,app-analytics-services.com,REJECT
+DOMAIN,msmp.abchina.com.cn,REJECT
 
 # 🔺 Telegram 防止加载转圈
 #IP-CIDR,95.161.76.100/31,REJECT
