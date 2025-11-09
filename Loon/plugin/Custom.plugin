@@ -10,7 +10,7 @@
 #!icon = https://onkk.cc/web/img/logo.png
 #!raw-url = https://raw.githubusercontent.com/ONKK/OTW/main/Loon/plugin/Custom.plugin
 #!tg-group = https://t.me/onkkgroup
-#!date = 2025-09-05 00:00:00
+#!date = 2025-11-09 00:00:00
 
 [Rule]
 
@@ -18,7 +18,7 @@
 # > 一些比较容易忽视的分流
 DOMAIN-SUFFIX,speedtest.net,DIRECT
 DOMAIN-SUFFIX,synology.com,DIRECT
-DOMAIN-KEYWORD,bwh8,DIRECT
+DOMAIN-KEYWORD,bwh,DIRECT
 
 # > domains
 DOMAIN-SUFFIX,22so.com,DIRECT

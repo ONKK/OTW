@@ -1,13 +1,13 @@
 # NAME: CustomFilter
 # AUTHOR: ONKK
-# UPDATED: 20250515
+# UPDATED: 20251109
 # 自定义规则
 
 # 🔺 直连
 # > 一些比较容易忽视的分流
 host-suffix, speedtest.net, direct
 host-suffix, synology.com, direct
-host-keyword, bwh8, direct
+host-keyword, bwh, direct
 
 # > domains
 host-suffix, 22so.com, direct
@@ -24,17 +24,16 @@ host-suffix, vvici.bid, direct
 host-suffix, 630630.xyz, direct
 host-suffix, 830830.xyz, direct
 
-
 # 🔺 代理
 host-suffix, 18wos.org, proxy
 host-keyword, github, proxy
 host-keyword, docker, proxy
 
-
 # 🔺 屏蔽
 host-keyword, hpplay, reject
 host, appsflyersdk.com, reject
 host, app-analytics-services.com, reject
+host, msmp.abchina.com.cn, reject
 
 # > Telegram 防止加载转圈
 ip-cidr, 95.161.76.100/31, reject
