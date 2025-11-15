@@ -7,6 +7,7 @@
 # > 一些比较容易忽视的分流
 host-suffix, speedtest.net, direct
 host-suffix, synology.com, direct
+host-suffix, 64clouds.com, direct
 host-keyword, bwh, direct
 
 # > domains

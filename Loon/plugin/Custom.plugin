@@ -18,6 +18,7 @@
 # > 一些比较容易忽视的分流
 DOMAIN-SUFFIX,speedtest.net,DIRECT
 DOMAIN-SUFFIX,synology.com,DIRECT
+DOMAIN-SUFFIX,64clouds.com,DIRECT
 DOMAIN-KEYWORD,bwh,DIRECT
 
 # > domains
